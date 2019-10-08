@@ -1166,5 +1166,10 @@
         <extracomment>description for ADVobfuscator in the list of used 3rd party components</extracomment>
         <translation>ADVobfuscator er et obfuscations bibliotek baseret på C 11/14 og metaprogrammering. Det bruges af Fuoten til at styre den internt brugte AES-nøgle til at kryptere gemte adgangskoder.</translation>
     </message>
+    <message id="fuoten-go-to-next-article">
+        <source>Next Article</source>
+        <extracomment>Menu entry on the article page to go to the next article</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

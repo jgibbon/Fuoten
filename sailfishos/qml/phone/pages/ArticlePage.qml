@@ -22,6 +22,7 @@ import QtQuick 2.2
 import QtQuick.Layouts 1.1
 import Sailfish.Silica 1.0
 import harbour.fuoten 1.0
+import harbour.fuoten.models 1.0
 import harbour.fuoten.items 1.0
 import "../../common/parts"
 
@@ -30,6 +31,23 @@ Page {
 
     property Article article: null
     property ContextConfig cc: null
+    property ArticleListFilterModel articlesModel
+    property int modelIndex
+    onModelIndexChanged: {
+        var newArticle = articlesModel.data(articlesModel.index(modelIndex, 0));
+        if(newArticle) {
+            article = newArticle;
+
+            if (article.unread) {
+                article.mark(false, true);
+            }
+            contentText.text = localstorage.getArticleBody(article.id);
+            covercon.article = article;
+            articleFlick.scrollToTop();
+        }
+    }
+
+    property bool nextArticlePossible: modelIndex < articlesModel.rowCount()
 
     onStatusChanged: {
         if (status === PageStatus.Active) {
@@ -98,6 +116,15 @@ Page {
         PushUpMenu {
             flickable: articleFlick
             visible: config.pushUpOnArticle
+            MenuItem {
+                //: Menu entry on the article page to go to the next article
+                //% "Next Article"
+                text: qsTrId("fuoten-go-to-next-article")
+                enabled: articlePage.nextArticlePossible
+                onClicked: {
+                    modelIndex = modelIndex + 1;
+                }
+            }
             MenuItem {
                 //: Menu entry on the article page to scroll back to the top of the page
                 //% "Scroll to top"

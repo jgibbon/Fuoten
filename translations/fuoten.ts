@@ -1237,5 +1237,10 @@
         <extracomment>description for ADVobfuscator in the list of used 3rd party components</extracomment>
         <translation type="unfinished"></translation>
     </message>
+    <message id="fuoten-go-to-next-article">
+        <source>Next Article</source>
+        <extracomment>Menu entry on the article page to go to the next article</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

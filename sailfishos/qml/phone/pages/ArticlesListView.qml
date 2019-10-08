@@ -110,9 +110,10 @@ BaseListView {
             if (display.error) {
                 display.clearError()
             } else {
+
                 switch(articlesListView.cc.openArticles) {
                 case FuotenApp.OpenInternal:
-                    pageStack.push(Qt.resolvedUrl("ArticlePage.qml"), {article: display, cc: articlesListView.cc})
+                    pageStack.push(Qt.resolvedUrl("ArticlePage.qml"), {article: display, cc: articlesListView.cc, articlesModel: articlesModel, modelIndex: index})
                     break
                 case FuotenApp.OpenWebView:
                     pageStack.push(Qt.resolvedUrl("WebViewPage.qml"), {article: display, cc: articlesListView.cc})

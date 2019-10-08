@@ -1166,5 +1166,10 @@
         <extracomment>description for ADVobfuscator in the list of used 3rd party components</extracomment>
         <translation>ADVobfuscator is een bibliotheek gebaseerd op C++11/14 en metaprogrammering. Ze wordt gebruikt door Fuoten om de interne AES-sleutel om opgeslagen versleutelde wachtwoorden mee te verbergen.</translation>
     </message>
+    <message id="fuoten-go-to-next-article">
+        <source>Next Article</source>
+        <extracomment>Menu entry on the article page to go to the next article</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

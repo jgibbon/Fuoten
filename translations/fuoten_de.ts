@@ -1166,5 +1166,11 @@
         <extracomment>description for ADVobfuscator in the list of used 3rd party components</extracomment>
         <translation>ADVobfuscator ist eine auf C++11/14 und Metaprogrammierung basierende Programmbibliothek zur Verschleierung von Programmteilen. Sie wird von Fuoten dazu verwendet, den zur AES-Verschlüsselung von Passwörtern intern genutzten AES-Schlüssel zu verschleiern.</translation>
     </message>
+
+    <message id="fuoten-go-to-next-article">
+        <source>Next Article</source>
+        <extracomment>Menu entry on the article page to go to the next article</extracomment>
+        <translation>Nächster Artikel</translation>
+    </message>
 </context>
 </TS>

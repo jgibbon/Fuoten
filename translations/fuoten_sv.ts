@@ -1166,5 +1166,10 @@
         <extracomment>description for ADVobfuscator in the list of used 3rd party components</extracomment>
         <translation>Advobfuscator är ett mörkläggningsbibliotek baserat på c++ 11/14 och metaprogramming. Det används av Fuoten för att fördunkla den internt använda AES-nyckel som krypterar lagrade lösenord.</translation>
     </message>
+    <message id="fuoten-go-to-next-article">
+        <source>Next Article</source>
+        <extracomment>Menu entry on the article page to go to the next article</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

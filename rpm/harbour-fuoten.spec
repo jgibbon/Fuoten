@@ -35,6 +35,7 @@ BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(nemonotifications-qt5)
 BuildRequires:  pkgconfig(sailfishsilica)
+BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  desktop-file-utils
 
 %description
